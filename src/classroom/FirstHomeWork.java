@@ -111,7 +111,6 @@ public class FirstHomeWork {
         }
         // Exercise 10: Write a Java program that takes a filename as input and checks if it has a valid file extension. Assume valid extensions are ".txt", ".doc", and ".pdf".
         // If the file has a valid extension, print "Valid file extension," otherwise print "Invalid file extension."
-        // (check for method:
         Scanner myScan = new Scanner(System.in);
         System.out.println("Enter the file name with extension: ");
         String input = myScan.nextLine();
