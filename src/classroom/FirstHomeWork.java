@@ -1,5 +1,7 @@
 package classroom;
 
+import java.util.Scanner;
+
 public class FirstHomeWork {
     public static void main(String[] args) {
 
@@ -62,9 +64,30 @@ public class FirstHomeWork {
         // Exercise 7: Write a Java program that determines if a given character is a vowel.
         // If it is, print "Vowel." (Use variable with data type: char.
         // When checking character use == and ||)
-
+        Scanner myScanner = new Scanner(System.in);
+        System.out.println("Please enter a char: ");
+        char ch = myScanner.next().charAt(0);
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+                ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+            System.out.println("Vowel " + ch);
+        } else {
+            System.out.println("Not a vowel " + ch);
+        }
         // Exersice 8: Create a Java program that calculates BMI (Body Mass Index) and categorizes it into different ranges.
         // Print the category based on the BMI. Formula: bmi = weight / (height * height);
+        double weight = 90;
+        double height = 1.78;
+        double bmi = weight / (height * height);
+        if (bmi < 18.5) {
+            System.out.println("Underweight");
+        } else if (bmi >= 18.5 && bmi <= 25.0) {
+            System.out.println("Normal weight");
+        } else if (bmi >= 25.0 && bmi < 30.0) {
+            System.out.println("Overweight");
+        } else {
+            System.out.println("You are very FAT:)");
+        }
+
 
         // Exercise 9: Write a Java program that calculates the final grade for a student based on their scores in three subjects: Math, Science, and English. The program should take input scores for each subject and calculate the average. Assign a final grade based on the following criteria:
         //If the average score is 90 or above, assign a grade of "A."
@@ -72,7 +95,9 @@ public class FirstHomeWork {
         //If the average score is between 70 and 79, assign a grade of "C."
         //If the average score is between 60 and 69, assign a grade of "D."
         //If the average score is below 60, assign a grade of "F."
-        int score = 90;
+        Scanner sk = new Scanner(System.in);
+        System.out.println("Please enter your score: ");
+        int score = sk.nextInt();
         if (score >= 90) {
             System.out.println("A");
         } else if (score >= 80 && score <= 89) {
@@ -87,5 +112,13 @@ public class FirstHomeWork {
         // Exercise 10: Write a Java program that takes a filename as input and checks if it has a valid file extension. Assume valid extensions are ".txt", ".doc", and ".pdf".
         // If the file has a valid extension, print "Valid file extension," otherwise print "Invalid file extension."
         // (check for method:
+        Scanner myScan = new Scanner(System.in);
+        System.out.println("Enter the file name with extension: ");
+        String input = myScan.nextLine();
+        if (input.endsWith(".txt") || input.endsWith(".doc") || input.endsWith(".pdf")) {
+            System.out.println("Valid file extension! ");
+        } else {
+            System.out.println("Invalid file extension! ");
+        }
     }
 }
