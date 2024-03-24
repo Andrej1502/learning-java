@@ -41,7 +41,6 @@ public class ConditionalStatements {
         // Teenager: >= 13 age;
         // Adult: => 20 & <= 59;
         // ELSE: Senior
-
         int age = 25;
 
         if (age <=12) {
@@ -51,7 +50,6 @@ public class ConditionalStatements {
         }
 
         // if else-if else
-
         if (age <= 12) {
             System.out.println("This is child!");
         }
@@ -69,7 +67,6 @@ public class ConditionalStatements {
         // Step 1: define variable (int number = 10);
         // Step 2: create logic
         // Step 3: For each condition print out message(is positive, is negative, is zero);
-
         int num = 10;
 
         if (num == 0) {
@@ -85,7 +82,6 @@ public class ConditionalStatements {
         // If the hour is between 12 and 17, will print: Good afternoon;
         // If the hour is between 18 and 23, will print: Good evening;
         // In all other cases should say: Invalid hour provided;
-
         int hour = 40;
 
         if (hour >= 0 && hour<=11) {
@@ -97,6 +93,5 @@ public class ConditionalStatements {
         } else {
             System.out.println("Invalid hour provided! " + hour);
         }
-
     }
 }
