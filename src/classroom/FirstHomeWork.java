@@ -73,6 +73,7 @@ public class FirstHomeWork {
         } else {
             System.out.println("Not a vowel " + ch);
         }
+
         // Exersice 8: Create a Java program that calculates BMI (Body Mass Index) and categorizes it into different ranges.
         // Print the category based on the BMI. Formula: bmi = weight / (height * height);
         double weight = 90;
@@ -87,7 +88,6 @@ public class FirstHomeWork {
         } else {
             System.out.println("You are very FAT:)");
         }
-
 
         // Exercise 9: Write a Java program that calculates the final grade for a student based on their scores in three subjects: Math, Science, and English. The program should take input scores for each subject and calculate the average. Assign a final grade based on the following criteria:
         //If the average score is 90 or above, assign a grade of "A."
@@ -111,7 +111,6 @@ public class FirstHomeWork {
         }
         // Exercise 10: Write a Java program that takes a filename as input and checks if it has a valid file extension. Assume valid extensions are ".txt", ".doc", and ".pdf".
         // If the file has a valid extension, print "Valid file extension," otherwise print "Invalid file extension."
-        // (check for method:
         Scanner myScan = new Scanner(System.in);
         System.out.println("Enter the file name with extension: ");
         String input = myScan.nextLine();
